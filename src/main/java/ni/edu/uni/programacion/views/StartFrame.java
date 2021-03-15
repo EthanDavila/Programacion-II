@@ -10,6 +10,8 @@ import ni.edu.uni.programacion.controllers.PnlCalculadoraController;
 import ni.edu.uni.programacion.views.panels.PnlCalculadora;
 import ni.edu.uni.programacion.controllers.PnlTemperaturaController;
 import ni.edu.uni.programacion.views.panels.PnlTemperatura;
+import ni.edu.uni.programacion.controllers.PnlMonedaController;
+import ni.edu.uni.programacion.views.panels.PnlMoneda;
 
 /**
  *
@@ -20,6 +22,8 @@ public class StartFrame extends javax.swing.JFrame {
     private PnlCalculadoraController pnlCalculadoraController;
     private PnlTemperatura pnlTemperatura;
     private PnlTemperaturaController pnlTemperaturaController;
+    private PnlMoneda pnlMoneda;
+    private PnlMonedaController pnlMonedaController;
     /**
      * Creates new form StartFrame
      */
@@ -68,6 +72,11 @@ public class StartFrame extends javax.swing.JFrame {
                 pnlLeftButtons.add(btnTemp);
 
                 btnMoneda.setText("Moneda");
+                btnMoneda.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                btnMonedaActionPerformed(evt);
+                        }
+                });
                 pnlLeftButtons.add(btnMoneda);
 
                 getContentPane().add(pnlLeftButtons, java.awt.BorderLayout.LINE_START);
@@ -103,6 +112,18 @@ public class StartFrame extends javax.swing.JFrame {
         pnlContent.add(pnlTemperatura, BorderLayout.CENTER);
         this.validate();
         }//GEN-LAST:event_btnTempActionPerformed
+
+        private void btnMonedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMonedaActionPerformed
+        if(pnlMoneda == null){
+            pnlMoneda = new PnlMoneda();
+            pnlMonedaController = new PnlMonedaController(pnlMoneda);
+        }
+        if(pnlContent.getComponentCount() > 0){
+            pnlContent.remove(0);
+        }
+        pnlContent.add(pnlMoneda, BorderLayout.CENTER);
+        this.validate();
+        }//GEN-LAST:event_btnMonedaActionPerformed
 
     /**
      * @param args the command line arguments
