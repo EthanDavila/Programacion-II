@@ -70,9 +70,15 @@ public class PnlMoneda extends javax.swing.JPanel {
 	public void setBtnNuevo(JButton btnNuevo) {
 		this.btnNuevo = btnNuevo;
 	}
-	
-	
 
+	public JLabel getLblMessage() {
+		return LblMessage;
+	}
+
+	public void setLblMessage(JLabel LblMessage) {
+		this.LblMessage = LblMessage;
+	}
+	
 	/**
 	 * This method is called from within the constructor to initialize the
 	 * form. WARNING: Do NOT modify this code. The content of this method is
@@ -94,6 +100,7 @@ public class PnlMoneda extends javax.swing.JPanel {
                 jLabel3 = new javax.swing.JLabel();
                 Valor = new javax.swing.JTextField();
                 LblResultado = new javax.swing.JLabel();
+                LblMessage = new javax.swing.JLabel();
 
                 jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 15, 5));
 
@@ -188,6 +195,15 @@ public class PnlMoneda extends javax.swing.JPanel {
                 gridBagConstraints.insets = new java.awt.Insets(5, 10, 5, 34);
                 jPanel2.add(LblResultado, gridBagConstraints);
 
+                LblMessage.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+                LblMessage.setForeground(new java.awt.Color(0, 0, 0));
+                gridBagConstraints = new java.awt.GridBagConstraints();
+                gridBagConstraints.gridx = 0;
+                gridBagConstraints.gridy = 7;
+                gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+                gridBagConstraints.insets = new java.awt.Insets(0, 9, 0, 0);
+                jPanel2.add(LblMessage, gridBagConstraints);
+
                 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
                 this.setLayout(layout);
                 layout.setHorizontalGroup(
@@ -198,7 +214,8 @@ public class PnlMoneda extends javax.swing.JPanel {
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap()
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 );
@@ -207,6 +224,7 @@ public class PnlMoneda extends javax.swing.JPanel {
 
         // Variables declaration - do not modify//GEN-BEGIN:variables
         private javax.swing.JComboBox<String> FromCmb;
+        private javax.swing.JLabel LblMessage;
         private javax.swing.JLabel LblResultado;
         private javax.swing.JComboBox<String> ToCmb;
         private javax.swing.JTextField Valor;

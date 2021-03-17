@@ -47,6 +47,7 @@ public class PnlTemperatureController implements ActionListener {
         }
 	if(e.getActionCommand().equalsIgnoreCase("Nuevo")){
 		pnlConversionTemplate.getTxtValue().setText("");
+		pnlConversionTemplate.getLblResult().setText("Resultado: ");
 	}
     }
     

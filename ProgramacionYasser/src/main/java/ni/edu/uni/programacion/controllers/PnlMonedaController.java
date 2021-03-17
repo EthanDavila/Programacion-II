@@ -43,11 +43,22 @@ public class PnlMonedaController implements ActionListener{
 			int cmbFromIndex = pnlMoneda.getFromCmb().getSelectedIndex();
 			int cmbToIndex = pnlMoneda.getToCmb().getSelectedIndex();
 			double Valor = Double.parseDouble(pnlMoneda.getValor().getText());
-			pnlMoneda.getLblResultado().setText("Resultado: " + ConvertidorMoneda(Valor, cmbFromIndex, cmbToIndex));
+			double Comprobante = Double.parseDouble(pnlMoneda.getValor().getText());
+			if (Comprobante > 0){
+				pnlMoneda.getLblResultado().setText("Resultado: " + ConvertidorMoneda(Valor, cmbFromIndex, cmbToIndex));
+				pnlMoneda.getLblMessage().setText("\"La conversión fue un exito\"");
+			}
+			else {
+				pnlMoneda.getLblResultado().setText("Resultado: ");
+				pnlMoneda.getLblMessage().setText("\"No puedes convertir No. negativos\"");
+				return;
+			}
 		}
 		
 		if(e.getActionCommand().equalsIgnoreCase("Nuevo")){
 			pnlMoneda.getValor().setText("");
+			pnlMoneda.getLblResultado().setText("Resultado: ");
+			pnlMoneda.getLblMessage().setText("");
 		}
 	}
 	
