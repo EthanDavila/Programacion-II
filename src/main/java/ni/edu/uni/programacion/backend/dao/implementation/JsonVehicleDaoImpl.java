@@ -77,7 +77,7 @@ public class JsonVehicleDaoImpl extends RandomTemplate implements VehicleDao{
     }
 
     @Override
-    public Collection<Vehicle> getAll() throws IOException {
+    public List<Vehicle> getAll() throws IOException {
         List<Vehicle> vehicles = new ArrayList<>();
         Vehicle vehicle = null;
         

@@ -55,9 +55,7 @@ public class PnlVehicleController implements ActionListener{
         pnlVehicle.getBtnBrowse().addActionListener(this);
         pnlVehicle.getBtnSave().addActionListener(this);
         
-        JsonReader jreader = new JsonReader(
-               new BufferedReader(new InputStreamReader(
-                       getClass().getResourceAsStream("/jsons/vehicleData.json")))
+        JsonReader jreader = new JsonReader(new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/jsons/vehicleData.json")))
         );
         
         Type listType = new TypeToken<ArrayList<VehicleSubModel>>(){}.getType();
