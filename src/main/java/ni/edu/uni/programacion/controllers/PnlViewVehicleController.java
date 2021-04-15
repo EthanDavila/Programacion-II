@@ -80,14 +80,4 @@ public class PnlViewVehicleController {
         pnlViewVehicles.getTblViewVehicle().setRowSorter(tblRowSorter);
     }
 
-//    private Object[][] getData() throws IOException {
-//        vehicles = jsonVehicleDaoImpl.getAll().stream().collect(Collectors.toList());
-//        Object data[][] = new Object[vehicles.size()][vehicles.get(0).asArray().length];
-//
-//        IntStream.range(0, vehicles.size()).forEach(i -> {
-//            data[i] = vehicles.get(i).asArray();
-//        });
-//
-//        return data;
-//    }
 }
