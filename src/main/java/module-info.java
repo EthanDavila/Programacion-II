@@ -5,7 +5,6 @@ module com.mycompany.programacion2.tableviewfx {
 
     opens com.mycompany.programacion2.tableviewfx to javafx.fxml;
     exports com.mycompany.programacion2.tableviewfx;
-    exports com.mycompany.programacion2.tableviewfx.controllers;
     exports com.mycompany.programacion2.tableviewfx.controller;
     exports com.mycompany.programacion2.tableviewfx.pojo;
 }

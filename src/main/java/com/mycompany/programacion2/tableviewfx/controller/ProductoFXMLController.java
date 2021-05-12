@@ -70,7 +70,7 @@ public class ProductoFXMLController implements Initializable {
         TblCDescripcion.setCellValueFactory(new PropertyValueFactory<>("descripcion"));
         TblCCantidad.setCellValueFactory(new PropertyValueFactory<>("cantidad"));
         TblCPrecio.setCellValueFactory(new PropertyValueFactory<>("precio"));
-        SpnCantidad.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 1, 100));
+        SpnCantidad.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100));
         
         TblViewProductos.setItems(Productos);
     }    
