@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\bin\Debug\Prueba de Impresion.exe.config
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\bin\Debug\Prueba de Impresion.exe
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\bin\Debug\Prueba de Impresion.pdb
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\obj\Debug\Prueba de Impresion.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\obj\Debug\Prueba_de_Impresion.Form1.resources
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\obj\Debug\Prueba_de_Impresion.Properties.Resources.resources
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\obj\Debug\Prueba de Impresion.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\obj\Debug\Prueba de Impresion.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\obj\Debug\Prueba de Impresion.exe
+C:\Users\HP\Desktop\Prueba de Impresion\Prueba de Impresion\obj\Debug\Prueba de Impresion.pdb
